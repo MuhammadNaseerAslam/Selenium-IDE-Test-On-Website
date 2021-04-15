@@ -1,0 +1,291 @@
+{
+  "id": "0633c889-a841-4dbb-9ba9-df26ba82ff98",
+  "version": "2.0",
+  "name": "BITF17A039_SQA_A3",
+  "url": "https://www.w3schools.com",
+  "tests": [{
+    "id": "fd74f7cc-5a43-43cb-9d54-64d8031cf80e",
+    "name": "Test Case 01",
+    "commands": [{
+      "id": "f972c6c1-be85-4649-949b-216257bd3cd4",
+      "comment": "",
+      "command": "open",
+      "target": "/python/default.asp",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c06347b1-e099-4e34-8052-66dc06fe1da6",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1376x744",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0b8775fe-e0a0-4ac0-9be8-a4311cfccd38",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=COURSES",
+      "targets": [
+        ["linkText=COURSES", "linkText"],
+        ["css=.w3-right:nth-child(19)", "css:finder"],
+        ["xpath=//a[contains(text(),'COURSES')]", "xpath:link"],
+        ["xpath=//a[@onclick=\"ga('send', 'event', 'Courses' , 'Clicked on courses in top navigation');\"]", "xpath:attributes"],
+        ["xpath=//div[@id='topnav']/div/div/a[19]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://courses.w3schools.com')]", "xpath:href"],
+        ["xpath=//a[19]", "xpath:position"],
+        ["xpath=//a[contains(.,'COURSES')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4b0427a3-6bcf-4910-a899-851f7e74ffc6",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=topnavbtn_references",
+      "targets": [
+        ["id=topnavbtn_references", "id"],
+        ["linkText=REFERENCES", "linkText"],
+        ["css=#topnavbtn_references", "css:finder"],
+        ["xpath=//a[contains(text(),'REFERENCES')]", "xpath:link"],
+        ["xpath=//a[@id='topnavbtn_references']", "xpath:attributes"],
+        ["xpath=//div[@id='topnav']/div/div/a[20]", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'javascript:void(0);')])[6]", "xpath:href"],
+        ["xpath=//a[20]", "xpath:position"],
+        ["xpath=//a[contains(.,'REFERENCES ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "07dc5a18-d05e-480a-956a-20cf3901eeb5",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Python Get Started",
+      "targets": [
+        ["linkText=Python Get Started", "linkText"],
+        ["css=#leftmenuinnerinner > a:nth-child(4)", "css:finder"],
+        ["xpath=//a[contains(text(),'Python Get Started')]", "xpath:link"],
+        ["xpath=//div[@id='leftmenuinnerinner']/a[3]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'python_getstarted.asp')]", "xpath:href"],
+        ["xpath=//div[5]/div/div/a[3]", "xpath:position"],
+        ["xpath=//a[contains(.,'Python Get Started')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8d980604-2d0b-4d9c-9ccf-96d46a958cb0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.w3-clear:nth-child(3)",
+      "targets": [
+        ["css=.w3-clear:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='main']/div[2]", "xpath:idRelative"],
+        ["xpath=//div[6]/div/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3ba0ce2d-c311-48b0-92e4-dcb55788683e",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "Python Getting Started",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9ebaff4e-01e3-4a99-a06a-1f578c5c41f4",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//h2[contains(.,'Python Quickstart')]",
+      "targets": [
+        ["css=h2:nth-child(13)", "css:finder"],
+        ["xpath=//div[@id='main']/h2[2]", "xpath:idRelative"],
+        ["xpath=//div[6]/div/div/h2[2]", "xpath:position"],
+        ["xpath=//h2[contains(.,'Python Quickstart')]", "xpath:innerText"]
+      ],
+      "value": "Python Quickstart"
+    }, {
+      "id": "3c69f3ee-6b14-4f4f-ac21-e09b3a03fb15",
+      "comment": "",
+      "command": "storeXpathCount",
+      "target": "xpath=//a[contains(text(),'Python Dictionaries')]",
+      "targets": [],
+      "value": "count"
+    }, {
+      "id": "388eef2f-894e-4d32-9b16-6f40ceb0a338",
+      "comment": "",
+      "command": "echo",
+      "target": "${count}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d9a8efb2-4e9e-4ac5-9c17-33dd7daf2fab",
+      "comment": "",
+      "command": "storeXpathCount",
+      "target": "xpath=//a[contains(text(),'Python Strings')]",
+      "targets": [],
+      "value": "Sum"
+    }, {
+      "id": "dbf8a6ca-ecae-4ae7-a723-a33601af5030",
+      "comment": "",
+      "command": "echo",
+      "target": "${Sum}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "581bb385-b329-4d49-ba35-5b703cc2262c",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "Python Getting Started",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "404a2fcb-4119-4f11-9cf7-e6e9eca7fab9",
+    "name": "Test Case 02",
+    "commands": [{
+      "id": "a367abd3-66fb-420b-948c-b6084cbf8179",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "47675363-5f79-48d0-ac62-ad81fd3b68df",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1376x744",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b63bd428-de47-4a63-b46f-cf7ecc8805fd",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Learn HTML",
+      "targets": [
+        ["linkText=Learn HTML", "linkText"],
+        ["css=.w3-bar-block > .w3-bar-item:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'Learn HTML')]", "xpath:link"],
+        ["xpath=//nav[@id='mySidenav']/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/html/default.asp')]", "xpath:href"],
+        ["xpath=//nav/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Learn HTML')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7c58a53f-e33a-4dd6-a8ee-d68aefb68436",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h2:nth-child(11)",
+      "targets": [
+        ["css=h2:nth-child(11)", "css:finder"],
+        ["xpath=//div[@id='main']/h2[2]", "xpath:idRelative"],
+        ["xpath=//div[6]/div/div/h2[2]", "xpath:position"]
+      ],
+      "value": "HTML Examples"
+    }, {
+      "id": "212723fc-b9ab-4b9f-9530-04e25a90c521",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=HTML Paragraphs",
+      "targets": [
+        ["linkText=HTML Paragraphs", "linkText"],
+        ["css=#leftmenuinnerinner > a:nth-child(9)", "css:finder"],
+        ["xpath=//a[contains(text(),'HTML Paragraphs')]", "xpath:link"],
+        ["xpath=//div[@id='leftmenuinnerinner']/a[8]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'html_paragraphs.asp')]", "xpath:href"],
+        ["xpath=//div[5]/div/div/a[8]", "xpath:position"],
+        ["xpath=//a[contains(.,'HTML Paragraphs')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fb7e1607-3c46-4753-8496-7bbffe80b1ef",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "HTML Paragraphs",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9db7b55c-284d-4634-8d5c-a59d7eeab795",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=HTML Formatting",
+      "targets": [
+        ["linkText=HTML Formatting", "linkText"],
+        ["css=#leftmenuinnerinner > a:nth-child(11)", "css:finder"],
+        ["xpath=//a[contains(text(),'HTML Formatting')]", "xpath:link"],
+        ["xpath=//div[@id='leftmenuinnerinner']/a[10]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'html_formatting.asp')]", "xpath:href"],
+        ["xpath=//div[5]/div/div/a[10]", "xpath:position"],
+        ["xpath=//a[contains(.,'HTML Formatting')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "688339c6-e977-4cbe-ae09-758b003bfa12",
+      "comment": "",
+      "command": "storeXpathCount",
+      "target": "linkText=HTML Colors",
+      "targets": [],
+      "value": "Count"
+    }, {
+      "id": "1c5d76d6-5968-46d5-9711-b3d491ca1e91",
+      "comment": "",
+      "command": "echo",
+      "target": "${Count}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ddeddc0f-46b5-42f6-b0c3-66049345c526",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=HTML Colors",
+      "targets": [
+        ["linkText=HTML Colors", "linkText"],
+        ["css=#leftmenuinnerinner > a:nth-child(14)", "css:finder"],
+        ["xpath=//a[contains(text(),'HTML Colors')]", "xpath:link"],
+        ["xpath=//div[@id='leftmenuinnerinner']/a[13]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'html_colors.asp')]", "xpath:href"],
+        ["xpath=//div[5]/div/div/a[13]", "xpath:position"],
+        ["xpath=//a[contains(.,'HTML Colors')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4e2468a4-3c17-4771-b447-a7dd2802bb42",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "HTML Colors",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1d276862-9a62-45c0-adbf-d4a3890fc789",
+      "comment": "",
+      "command": "click",
+      "target": "id=main",
+      "targets": [
+        ["id=main", "id"],
+        ["css=#main", "css:finder"],
+        ["xpath=//div[@id='main']", "xpath:attributes"],
+        ["xpath=//div[@id='belowtopnav']/div/div", "xpath:idRelative"],
+        ["xpath=//body/div[6]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1ca7ee56-b16d-4c70-9667-ad37861c0e49",
+      "comment": "",
+      "command": "verifyText",
+      "target": "id=main",
+      "targets": [
+        ["id=main", "id"],
+        ["css=#main", "css:finder"],
+        ["xpath=//div[@id='main']", "xpath:attributes"],
+        ["xpath=//div[@id='belowtopnav']/div/div", "xpath:idRelative"],
+        ["xpath=//body/div[6]/div/div", "xpath:position"]
+      ],
+      "value": "HTML Colors\\n❮ Previous\\nNext ❯\\nHTML colors are specified with predefined color names, or with RGB, HEX, HSL, RGBA, or HSLA values.\\nColor Names\\nIn HTML, a color can be specified by using a color name:\\nTomato\\nOrange\\nDodgerBlue\\nMediumSeaGreen\\nGray\\nSlateBlue\\nViolet\\nLightGray\\nTry it Yourself »\\nHTML supports 140 standard color names.\\nBackground Color\\nYou can set the background color for HTML elements:\\nHello World\\n\\n\\nLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.\\n\\nExample\\n<h1 style=\"background-color:DodgerBlue;\">Hello World</h1>\\n<p style=\"background-color:Tomato;\">Lorem ipsum...</p>\\n\\nTry it Yourself »\\nText Color\\nYou can set the color of text:\\nHello World\\nLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.\\nUt wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.\\nExample\\n<h1 style=\"color:Tomato;\">Hello World</h1>\\n<p style=\"color:DodgerBlue;\">Lorem ipsum...</p>\\n<p style=\"color:MediumSeaGreen;\">Ut wisi enim...</p>\\nTry it Yourself »\\nBorder Color\\nYou can set the color of borders:\\nHello World\\nHello World\\nHello World\\nExample\\n<h1 style=\"border:2px solid Tomato;\">Hello World</h1>\\n<h1 style=\"border:2px solid DodgerBlue;\">Hello World</h1>\\n<h1 style=\"border:2px solid Violet;\">Hello World</h1>\\nTry it Yourself »\\nColor Values\\nIn HTML, colors can also be specified using RGB values, HEX values, HSL values, RGBA values, and HSLA values.\\nThe following three <div> elements have their background color set with RGB, HEX, and HSL values:\\nrgb(255, 99, 71)\\n#ff6347\\nhsl(9, 100%, 64%)\\nThe following two <div> elements have their background color set with RGBA and HSLA values, which adds an Alpha channel to the color (here we have 50% transparency):\\nrgba(255, 99, 71, 0.5)\\nhsla(9, 100%, 64%, 0.5)\\nExample\\n<h1 style=\"background-color:rgb(255, 99, 71);\">...</h1>\\n<h1 style=\"background-color:#ff6347;\">...</h1>\\n<h1 style=\"background-color:hsl(9, 100%, 64%);\">...</h1>\\n\\n<h1 style=\"background-color:rgba(255, 99, 71, 0.5);\">...</h1>\\n<h1 style=\"background-color:hsla(9, 100%, 64%, 0.5);\">...</h1>\\nTry it Yourself »\\nLearn more about Color Values\\nYou will learn more about RGB, HEX and HSL in the next chapters.\\n\\n❮ Previous\\nNext ❯"
+    }]
+  }],
+  "suites": [{
+    "id": "c4864e86-d8a6-4b1b-a9b4-655e77aca6ce",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["fd74f7cc-5a43-43cb-9d54-64d8031cf80e"]
+  }],
+  "urls": ["https://www.w3schools.com/"],
+  "plugins": []
+}
